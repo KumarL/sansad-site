@@ -1,14 +1,23 @@
-<head>
-<style type="text/css">
-  .centeredItem
-    {
-    text-align:center;
-    display:block;
-    }
-</style>
-</head>
+---
+layout: default
+---
 
-<h1 align=middle style="font-family:helvetica;">In the works!</h1>
-<p class="centeredItem">
-<img style="vertical-align:middle" src=http://intheworkssf.files.wordpress.com/2012/03/itw_011.jpg>
-</p>
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
