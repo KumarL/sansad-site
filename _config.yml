@@ -1,14 +1,15 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: "Sansad: APIs for the Parliament of India"
+email: lokeshk@sansad.co
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Sansad provides latest data coming from the Parliament of India. Call
+  the APIs to know what your local legislator is up to, or where that
+  bill on education is stuck. It's more information, and thus, more power
+  to you!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://sansad.co" # the base hostname & protocol for your site
+twitter_username: lokeshku
+github_username:  KumarL
 
 # Build settings
 markdown: kramdown
