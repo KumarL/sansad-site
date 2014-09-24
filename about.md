@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This site hosts Sansad APIs. All the software that power these APIs, and this site, is in the public domain.
+This site hosts the [Sansad APIs](/api). All the software that power these APIs, and this site, is in the public domain.
 
 You can find the source code for Sansad API at: [github.com/KumarL/sansad](https://github.com/KumarL/sansad)
 
