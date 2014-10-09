@@ -27,7 +27,7 @@ We provide two methods, `Legislators`, and `Bills`, that are described in detail
 Legislators
 -----------
 
-This method provides information and activity stats on the current memebers of the Parliament, belonging to both the houses, Lok Sabha, and Rajya Sabha. This method lives at the below root domain.
+This method provides information and activity stats on the current members of the Parliament, belonging to both the houses, Lok Sabha, and Rajya Sabha. This method lives at the below root domain.
 
 {% highlight text %}
 http://sansad.co/api/legislators
@@ -226,8 +226,8 @@ At the top-level of every response are **count** and **page** fields, with pagin
 "count": 781,
 "page": {
   "count": 20,
-  "per_page": 20,
-  "page": 1
+  "per_page": 30,
+  "page": 5
 }
 {% endhighlight %}
 
