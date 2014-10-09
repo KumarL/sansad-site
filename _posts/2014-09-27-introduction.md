@@ -79,7 +79,7 @@ The last name of the legislator
 The gender of the legislator
 
 ***age**:  
-The age, as reported in the offical documents, of the parliamentarian
+The age, as reported in the official documents, of the parliamentarian
 
 ***state**:  
 The state, to which the legislator represents in the Parliament.
@@ -115,7 +115,7 @@ The number of questions that the legislator has asked in the parliament
 The attendance percentage of the legislator in the parliament.
 
 ***house**:  
-The house to which the legislator is a member of - Lok Sabha, or Rajya Sabhya.
+The house to which the legislator is a member of - Lok Sabha, or Rajya Sabha.
 
 ***term_start**:  
 The date as which the legislator's membership started.
@@ -233,7 +233,7 @@ At the top-level of every response are **count** and **page** fields, with pagin
 
 ### Partial Responses
 
-IF you're interested in a subset of the fields, you can request them by supplying a comma-separated list of files as the `fields` parameter.
+If you're interested in a subset of the fields, you can request them by supplying a comma-separated list of files as the `fields` parameter.
 
 **Political parties of the legislators in the state of Delhi**
 
