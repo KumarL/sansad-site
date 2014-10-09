@@ -212,7 +212,26 @@ You can check the status of the API at the root address of the API: `http://sans
 }
 {% endhighlight %}
 
-### Parial Responses
+### Pagination  
+
+All results in the Sansad API are paginated. You can set `per_page`, and `page` to control the page size and the offset. The maximum `per_page` is 50.
+
+{% highlight text %}
+/legislators?fields=party&per_page=30&page=5
+{% endhighlight %}
+
+At the top-level of every response are **count** and **page** fields, with pagination information.
+
+{% highlight JSON %}
+"count": 781,
+"page": {
+  "count": 20,
+  "per_page": 20,
+  "page": 1
+}
+{% endhighlight %}
+
+### Partial Responses
 
 IF you're interested in a subset of the fields, you can request them by supplying a comma-separated list of files as the `fields` parameter.
 
