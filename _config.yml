@@ -1,6 +1,6 @@
 # Site settings
 title: "Sansad: APIs for the Parliament of India"
-#email: lokeshk@sansad.co
+email: lokeshk@sansad.co
 description: > # this means to ignore newlines until "baseurl:"
   Sansad provides you the latest data from the Parliament of India. Call
   the APIs to know what your local legislator is up to, or where that
