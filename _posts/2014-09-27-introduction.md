@@ -271,6 +271,36 @@ You can filter on many fields to get a subset of the results.
 /bills?ministry=Law and Justice
 {% endhighlight %}
 
+### Operators 
+The API supports 8 operators that can be combined with the filters:
+
+  * **gt** - the field is greater than this value
+  * **gte*** - the field is greather than on equal to this value
+  * **lt** - the field is less than this value
+  * **lte** - the field is less than or equal to this value
+  * **not** - the field is not this value
+  * **all** - the field is an array that contains all of these values (separated by `|`)
+  * **in** - the field is a string that is one of the values (separated by `|`)
+  * **nin** - the field is a string that is *not* one of these values (separated by `|`)
+  * **exists** - the field is both present and non-null (supply `true` or `false`)
+
+All operators are applied by adding two underscores(`__`) after the field name. They cannot be combined.
+
+**Lok Sabha Members with attendance less than 10 percentage**
+{% highlight text %}
+/legislators?attendance_percentage__lt=10&house=Lok Sabha
+{% endhighlight %}
+
+**Lok Sabha members greater than 80 years of age**
+{% highlight text %}
+/legislators?age__gt=80&house=Lok Sabha
+{% endhighlight %}
+
+### Sorting
+You can sort the result by one or more fields by specifying the `order` parameter. `order` is option, but if no `order` is given, there is no guarantee to the order being predictable.
+
+Append `__asc`, or `__desc` to the field names to control sort direction. The default direction is **desc**.
+
 ### Basic Search
 You can search the data by providing a `query` parameter to return results that the API thinks match your query. Queries are interpreted as *phrases*.
 
